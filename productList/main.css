@@ -1,0 +1,103 @@
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80");
+}
+.container {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    min-height: 100%;
+    background-color: lightyellow;
+    background-blend-mode: lighten;
+}
+
+.navigation {
+    flex: 0 0 150px;
+    min-height: 100%;
+    background-color: sandybrown;
+    justify-content: space-evenly;
+    text-align: center;
+
+
+}
+
+.navigation .filter-sort {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.content-container .product-container {
+    flex: 1 1 auto;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: auto;
+
+}
+
+.product-container .card {
+    height: 250px;
+    flex: 0 0 195px;
+    background-color: firebrick;
+    color: white;
+    margin: 5px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .navigation {
+        min-height: auto;
+        flex: 0 0 35px;
+    }
+
+    .navigation .filter-sort {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+    .container {
+        width: 720px;
+    }
+
+    .product-container .card {
+        flex-basis: 330px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .container {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    .content-container .product-container{
+        width: calc(100% - 50px);
+    }
+
+    .product-container .card {
+        height: 90px;
+        flex-basis: 100%;
+        display: flex;
+    }
+
+    #image {
+        max-height: 100% !important;
+        width: auto !important;
+    }
+}

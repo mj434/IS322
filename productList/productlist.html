@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PI | ProductList</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navigation">
+
+            <div class="filter-sort">
+                <label for='orderBy'>Sort</label>
+                <select id='orderBy' name='orderBy'>
+                    <option value='author'>Author(A-Z)</option>
+                    <option value='price'>Price(Low-High)</option>
+
+                </select>
+            </div>
+
+            <div class="filter-sort">
+                <label for="filterRange">PriceRange</label>
+                <select id="filterRange" name="filterRange">
+                    <option value='true'>Show all</option>
+                    <option value='false'>Less than 5</option>
+                </select>
+            </div>
+
+            <div class="filter-sort">
+                <label for="available">Show Unavailable?</label>
+                <select id="available" name="available">
+                    <option value="true">true</option>
+
+                    <option value="false">false</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="product-container">
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="productList.js"></script>
+</body>
+</html>

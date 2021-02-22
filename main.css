@@ -1,0 +1,51 @@
+p {
+    font-size: 14px;
+    color: green;
+}
+
+p.text-small {
+    font-size: 10px;
+    color: blue;
+    font-weight: 700;
+}
+
+p.text-big {
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+}
+
+#square-container {
+    margin: 10px 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square-container.wrap {
+    flex-wrap: wrap;
+}
+
+.square {
+    flex: 1 1 150px;
+    height: 150px;
+    background-color: #FF0000;
+    margin: 10px;
+}
+
+#square-container.wrap .square {
+    flex: 0 0 150px;
+}
+
+.square:last-of-type {
+    margin-right: 0;
+}
+
+.green {
+    background-color: #00FF00;
+}
+
+.blue {
+    background-color: #0000FF;
+}
